@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { MatModules } from '../mat-modules';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [MatModules],
+  standalone: true,
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
