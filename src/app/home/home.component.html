@@ -36,22 +36,21 @@
 
 <div class="back-img">
   <div class="container text-center mt-5 pt-5">
-    <h1 class="mt-5 pt-5">CORE-MIND SOLUTION</h1>
-    <h2 class="font-italic">We are a Professional Developers</h2>
+    <h1 class="mt-5 pt-5 txt">CORE-MIND SOLUTION</h1>
+    <h2 class=" heading2">We are a Professional Developers</h2>
     <button mat-raised-button class="mt-2 btn">Click Button</button>
   </div>
 </div>
 
-<div id="about" class="container mt-5">
+<div id="about" class="container mt-5" [@slideInOut]="isVisible ? 'in' : 'out'">
   <div class="row mt-5">
     <div class="col-md-6">
-
-      <div data-aos="zoom-in" style="transition: 0.8s;">
-        <img class="w-100" src="imgs/pic1.png" alt="">
-      </div>
+      <img class="w-100" src="../../imgs/pic1.png" alt="">
+      <!-- <div data-aos="zoom-in" style="transition: 0.8s;">
+      </div> -->
     </div>
     <div class="col-md-6 mt-5 text-center p-5">
-      <h1><span class="heading-black p-2">Lorem ipsum dolor.</span> </h1>
+      <h1><span class="heading-black p-2">About Us</span> </h1>
       <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim maiores consequatur aliquam
         corporis, cupiditate amet facilis molestiae temporibus optio assumenda accusantium corrupti soluta minus
         doloribus neque? Ea ipsam aut alias.</p>
@@ -64,29 +63,29 @@
 
 <div id="feature" class="container mt-5">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 text-center">
       <img src="imgs/software.png" class="w-25" alt="">
-      <h3 class="heading-black">Web development</h3>
+      <h3 class="heading2">Web development</h3>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 text-center">
       <img src="imgs/mobile-development.png" class="w-25" alt="">
-      <h3 class="heading-black">App Development</h3>
+      <h3 class="heading2">App Development</h3>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 text-center">
       <img src="imgs/mobile-development.png" class="w-25" alt="">
-      <h3 class="heading-black">App Development</h3>
+      <h3 class="heading2">App Development</h3>
     </div>
-    <div class="col-md-4 mt-3">
+    <div class="col-md-4 mt-3 text-center">
       <img src="imgs/software.png" class="w-25" alt="">
-      <h3 class="heading-black">Web development</h3>
+      <h3 class="heading2">Web development</h3>
     </div>
-    <div class="col-md-4 mt-3">
+    <div class="col-md-4 mt-3 text-center">
       <img src="imgs/mobile-development.png" class="w-25" alt="">
-      <h3 class="heading-black">App Development</h3>
+      <h3 class="heading2">App Development</h3>
     </div>
-    <div class="col-md-4 mt-3">
+    <div class="col-md-4 mt-3 text-center">
       <img src="imgs/mobile-development.png" class="w-25" alt="">
-      <h3 class="heading-black">App Development</h3>
+      <h3 class="heading2">App Development</h3>
     </div>
   </div>
 </div>
@@ -148,6 +147,8 @@
 
   </div>
 </div>
+
+
 
 <div class="container text-center align-item-center mt-5 pt-5">
   <div class="row">
@@ -222,6 +223,87 @@
     </div>
   </div>
 </div>
+
+<h1 class="heading-black text-center mt-5 pt-5">Testimonials</h1>
+<div class="wrapper">
+  <div class="review-card">
+    <div class="header-content">
+      <div class="img-area">
+        <img alt="customer1" src="../../imgs/gitl-removebg-preview.png">
+      </div>
+      <div class="info">
+        <h4>Mohsin</h4>
+        <p>Maketing Manager</p>
+      </div>
+    </div>
+    <div class="single-review">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor eveniet deleniti repellendus! Minima, dolorum.</p>
+    </div>
+    <div class="review-footer">
+      <div class="rating">
+        <span class="active">★</span> 
+        <span class="active">★</span> 
+        <span class="active">★</span> 
+        <span class="">★</span> 
+        <span class="">★</span>
+      </div>
+      <p>Reviewed on 01/01/2023</p>
+    </div>
+  </div>
+  <div class="review-card mx-5">
+    <div class="header-content">
+      <div class="img-area">
+        <img alt="customer1" src="../../imgs/gitl-removebg-preview.png">
+      </div>
+      <div class="info">
+        <h4>Mark Wood</h4>
+        <p>Graphics Expert</p>
+      </div>
+    </div>
+    <div class="single-review">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor eveniet deleniti repellendus! Minima, dolorum.</p>
+    </div>
+    <div class="review-footer">
+      <div class="rating">
+        <span class="active">★</span> 
+        <span class="active">★</span> 
+        <span class="">★</span> 
+        <span class="">★</span> 
+        <span class="">★</span>
+      </div>
+      <p>Reviewed on 01/02/2023</p>
+    </div>
+  </div>
+  <div class="review-card">
+    <div class="header-content">
+      <div class="img-area">
+        <img alt="customer1" src="../../imgs/gitl-removebg-preview.png">
+      </div>
+      <div class="info">
+        <h4>Jason Chedd</h4>
+        <p>Web Designer</p>
+      </div>
+    </div>
+    <div class="single-review">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor eveniet deleniti repellendus! Minima, dolorum.</p>
+    </div>
+    <div class="review-footer">
+      <div class="rating">
+        <span class="active">★</span> 
+        <span class="active">★</span> 
+        <span class="active">★</span> 
+        <span class="active">★</span> 
+        <span class="active">★</span>
+      </div>
+      <p>Reviewed on 01/03/2023</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
 <footer>
   <div id="footer" class="jumbotron">

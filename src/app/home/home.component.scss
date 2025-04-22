@@ -4,10 +4,10 @@
 // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
-* {
-    margin: 0;
-    padding: 0;
-}
+// * {
+//     margin: 0;
+//     padding: 0;
+// }
 
 html {
     behavior: smooth;
@@ -71,21 +71,18 @@ html {
     letter-spacing: 1px;
 }
 
-// .txt {
-//     font-size: 80px;
-//     line-height: 160px;
-//     margin-left: -10px;
-//     color: transparent;
-//     -webkit-text-stroke: 1px #fff;
-//     // background: url(../../imgs/back.png);
-//     // background-clip: text;
-//     background-image: url(../../imgs/back.png);
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: 0 0;
-//     animation: back 20s linear infinite;
-//     font-family: serif;
-// }
+.txt {
+    font-size: 80px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    // background-image: url(back.png);
+    background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    font-family: serif;
+}
 
 @keyframes back-img {
     100% {
@@ -93,13 +90,7 @@ html {
     }
 }
 
-.tech-img{
-    background-image: url(../../imgs/technogies.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-filter: brightness(0.8);
-    filter: brightness(0.8);
- }
+
 
 .tech-icon{
     width: 120px;
@@ -256,16 +247,89 @@ html {
 .margin-bot-35{margin-bottom:35px;}
 }
 
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 5% 0;
+}
 
+.review-card {
+	background-color: #f5f5f5;
+	border-radius: 10px;
+	padding: 20px;
+	width: 300px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
 
+.img-area {
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-right: 25px;
+}
 
+.img-area img {
+	width: 100%;
+}
 
+.header-content {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
 
+.info h4 {
+	margin: 0;
+	font-size: 22px;
+	font-weight: 600;
+}
 
+.info p {
+	margin: 5px 0 0;
+	font-size: 14px;
+	font-weight: 400;
+	color: #666;
+}
 
+.single-review p {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.7;
+	color: #333;
+}
+.review-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #666;
+}
+.rating {
+	display: flex;
+}
+.rating span {
+	color: #000;
+	font-size: 18px;
+}
+.rating span.active {
+	color: #fbc02d;
+}
+@media screen and (max-width: 767px) {
+	.wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	.review-card {
+		width: 85%;
+	}
+}
 
 button {
-
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: transform 80ms ease-in;
@@ -338,4 +402,8 @@ footer .copyright {
 
 #icn3:hover {
     background: linear-gradient(rgb(206, 52, 85), rgb(37, 49, 214));
+}
+
+.slide-example {
+    overflow: hidden;
 }
