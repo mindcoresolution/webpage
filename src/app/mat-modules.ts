@@ -15,9 +15,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper'; 
 import { FormsModule } from '@angular/forms';
-// import { BrowserModule } from '@angular/platform-browser';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [],
@@ -37,9 +35,7 @@ import { FormsModule } from '@angular/forms';
     MatMenuModule,
     MatSnackBarModule,
     MatProgressSpinnerModule,
-    // CommonModule,
-    // BrowserModule,
-    // BrowserAnimationsModule
+    CommonModule,
   ],
   exports: [
     MatButtonModule,
@@ -57,9 +53,7 @@ import { FormsModule } from '@angular/forms';
     MatMenuModule,
     MatSnackBarModule,
     MatProgressSpinnerModule,
-    // CommonModule,
-    // BrowserModule,
-    // BrowserAnimationsModule
+    CommonModule,
   ],
   providers: [
     {

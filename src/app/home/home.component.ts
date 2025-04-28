@@ -2,6 +2,8 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 import { MatModules } from '../mat-modules';
 import { Component, OnInit, HostListener } from '@angular/core';
 import $ from 'jquery';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { ContactComponent } from '../contact/contact.component';
 
 @Component({
   selector: 'app-home',
@@ -9,27 +11,14 @@ import $ from 'jquery';
   standalone: true,
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
-  animations: [
-    trigger('slideInOut', [
-      state('in', style({
-        transform: 'translateX(0)',
-        opacity: 1
-      })),
-      state('out', style({
-        transform: 'translateX(100%)',
-        opacity: 0
-      })),
-      transition('in => out', animate('300ms ease-out')),
-      transition('out => in', animate('300ms ease-in'))
-    ])
-  ]
+  animations: []
 })
 export class HomeComponent implements OnInit {
 
   private isScroll = 0;
-  isVisible = false;
+  isTextVisible: boolean = false;
 
-  constructor() {}
+  constructor(private _myDialog: MatDialog) {}
 
   ngOnInit(): void {}
 
@@ -37,15 +26,18 @@ export class HomeComponent implements OnInit {
   onWindowScroll() {
     this.handleNavbar();
     this.handleCounter();
-    const element = document.getElementById('about');
-    if (element) {
-      const rect = element.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
+  }
 
-      if (rect.top <= windowHeight - 100) {
-        this.isVisible = true;
-      }
-    }
+  toggleText(){
+    this.isTextVisible = !this.isTextVisible;
+  }
+
+  openContact(){
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.width = "70vw";
+    dialogConfig.height = "auto";
+    // dialogConfig.disableClose = true;
+    this._myDialog.open(ContactComponent, dialogConfig);
   }
 
   private handleNavbar(): void {

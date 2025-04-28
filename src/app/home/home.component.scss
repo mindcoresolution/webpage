@@ -100,7 +100,7 @@ html {
 .container .card {
     position: relative;
     min-width: 300px;
-    height: 400px;
+    height: 470px;
     box-shadow: inset 5px, 5px, 5px rgba(0, 0, 0, 0.02),
         inset -5px, -5px, 15px rgba(225, 225, 225, 0.1),
         5px, 5px, 5px rgba(0, 0, 0, 0.03) -5px, -5px, 15px rgba(225, 225, 225, 0.1);
@@ -167,7 +167,7 @@ html {
 
 #banner {
     background: url(../../imgs/g.jpg) no-repeat;
-    min-height: 100vh;
+    min-height: 120vh;
     background-size: cover;
     background-attachment: fixed;
     padding: 0 50px;
@@ -175,9 +175,9 @@ html {
     transition: all 0.5s ease-in-out;
     display: flex;
     align-items: center;
-    margin-top: 140px;
-    
+    margin-top: 140px;   
 }
+
 
 #banner::before {
     position: absolute;
@@ -200,6 +200,30 @@ html {
     align-items: center;
     justify-content: space-between;
 }
+
+
+.gal-wrapper {
+	width: 1000px;
+	margin: 5% auto 0;
+}
+.gallery {
+	column-count: 3;
+	column-gap: 10px;
+}
+.gallery-item {
+	display: inline-block;
+	margin-bottom: 10px;
+	width: 100%;
+	overflow: hidden;
+}
+.gallery-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+
 
 .tech-section {
     background: url(../../imgs/technogies.jpg) no-repeat;
@@ -336,6 +360,18 @@ button {
     cursor: pointer;
 }
 
+.pointer{
+    cursor: pointer !important;
+}
+
+.hidden-text {
+  display: none;
+}
+
+.show-text {
+  display: block;
+}
+
 footer {
     text-align: center;
     margin-top: 60px;
@@ -406,4 +442,14 @@ footer .copyright {
 
 .slide-example {
     overflow: hidden;
+}
+
+.flex-dir-col{
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: start !important;
+}
+
+.pr-5{
+    padding-right: 5px !important;
 }
