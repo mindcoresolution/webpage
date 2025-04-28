@@ -2,7 +2,7 @@
   <div class="container">
     <nav class="navbar navbar-expand-sm navbar-light">
       <a href="#" class="navbar-brand">
-        <h1 class="ml-lg-2 heading">Core Mind Solutions</h1>
+        <h1 class="ml-lg-2 heading">Core Mind Solution</h1>
       </a>
       <button class="navbar-toggler d-lg-none bg-white" type="button" data-toggle="collapse" data-target="#collapse_nav"
         aria-controls="collapse_nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -362,21 +362,22 @@
 				<p>
 					<i class="fas fa-envelope pr-5"></i>coremindsolution.com.pk
 				</p>
-				<p>
-					<i class="fas fa-phone pr-5"></i>+92 3162859445
+				<p class="pointer" (click)="openWhatsapp(+923332894939)">
+					<i class="fas fa-phone pr-5"></i>+92 333-2894939
 				</p>
-				<p>
-					<i class="fas fa-print pr-5"></i>+01 335 633 77
+				<p class="pointer" (click)="openWhatsapp(+923488605993)">
+					<i class="fas fa-print pr-5 pointer"></i>+92 348-8605993
 				</p>
 			</div>
 			
 		</div>
 		<div class="row align-items-center border-top">
-			<div class="col-md-7 col-lg-8 mt-3">
+			<div class="col-md-7 col-lg-8 mt-3 d-flex align-items-center justify-content-start">
 				<p>	© 2025 Core-Mind Solution. All rights reserved. | Privacy Policy | Terms of Service
-					<a href="#" style="text-decoration: none;">
+					<!-- <a href="#" style="text-decoration: none;">
 						<strong class="text-white">Core-Mind</strong>
-					</a></p>
+					</a> -->
+        </p>
 			</div>
 			<div class="col-md-5 col-lg-4 mt-3">
 				<div class="text-center text-md-right">
@@ -394,7 +395,8 @@
 							<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
 						</li>
 						<li class="list-inline-item">
-							<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+							<a [href]="'https://wa.me/' + 03332894939" target="_blank"
+                class="btn-floating btn-sm text-white pointer" style="font-size: 23px;"><i class="fab fa-whatsapp"></i></a>
 						</li>
 					</ul>
 				</div>

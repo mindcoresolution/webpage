@@ -36,8 +36,11 @@ export class HomeComponent implements OnInit {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.width = "70vw";
     dialogConfig.height = "auto";
-    // dialogConfig.disableClose = true;
     this._myDialog.open(ContactComponent, dialogConfig);
+  }
+
+  openWhatsapp(phoneNo: number){
+    window.open(`https://wa.me/${phoneNo}`, '_blank');
   }
 
   private handleNavbar(): void {
