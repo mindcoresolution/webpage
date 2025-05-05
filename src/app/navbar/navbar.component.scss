@@ -1,0 +1,91 @@
+.navbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    background: linear-gradient(90deg, #6ba2da, #57488d);
+    color: #fff;
+    padding: 16px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  
+    .logo {
+        font-family: "Bruno Ace SC", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+  
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin-bottom: 0px !important;
+      gap: 1.5rem;
+      font-family: "Bruno Ace SC", sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      cursor: pointer;
+        
+      li {
+        text-decoration: none;
+        font-weight: 500;
+        position: relative;
+  
+        &:after {
+          content: "";
+          display: block;
+          height: 2px;
+          width: 0;
+          background: #fff;
+          transition: width 0.3s;
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+        }
+  
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+
+    .nav-links-mobile {
+      list-style: none;
+      margin-bottom: 0px !important;
+      gap: 1.5rem;
+      font-family: "Bruno Ace SC", sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0px;
+        
+      li {
+        text-decoration: none;
+        font-weight: 500;
+        position: relative;
+        line-height: 30px;
+        margin-top: 5px;
+  
+        &:after {
+          content: "";
+          display: block;
+          height: 2px;
+          width: 0;
+          background: #fff;
+          transition: width 0.3s;
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+        }
+  
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  

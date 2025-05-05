@@ -1,0 +1,26 @@
+<nav class="navbar">
+    <ng-container *ngIf="!isMobile else navberRef">
+        <div class="logo" (click)="onClick($event, 'home')">Core Mind Solution</div>
+        <ul class="nav-links">
+            <li (click)="onClick($event, 'ser')">Services</li>
+            <li (click)="onClick($event, 'tech')">Technologies</li>
+            <li (click)="onClick($event, 'port')">Portfolio</li>
+            <li>Contact</li>
+        </ul>
+    </ng-container>
+</nav>
+
+<ng-template #navberRef>
+    <div class="logo" (click)="onClick($event, 'home')">Core Mind Solution</div>
+    <div class="d-flex align-items-center">
+        <mat-icon class="pointer" (click)="isMenuOpen = !isMenuOpen">{{isMenuOpen ? 'close' : 'notes' }}</mat-icon>
+    </div>
+    <ng-container *ngIf="isMenuOpen">
+        <ul class="nav-links-mobile">
+            <li (click)="onClick($event, 'ser')">Services</li>
+            <li (click)="onClick($event, 'tech')">Technologies</li>
+            <li (click)="onClick($event, 'port')">Portfolio</li>
+            <li>Contact</li>
+        </ul>
+    </ng-container>
+</ng-template>

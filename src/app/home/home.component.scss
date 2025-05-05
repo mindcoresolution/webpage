@@ -13,86 +13,31 @@ html {
     behavior: smooth;
 }
 
-#main {
-    position: fixed;
-    z-index: 1;
-}
-
 .heading {
     color: #fff;
     font-family: "Bruno Ace SC", sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
 }
 
-.heading2{
+.heading2 {
     font-family: "Saira", sans-serif;
 }
 
-.heading-black{
+.heading-black {
     color: #000;
     font-family: "Bruno Ace SC", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
-#link_one {
-    color: #fff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-#link_one:hover {
-    background-color: #000;
-    box-shadow: 0px 1px 5px 2px #fff;
-    color: #fff;
-    font-weight: 20;
-    overflow: hidden;
-    text-align: center;
-    transition: 0.1s all;
-    text-decoration: none;
-    border: 2px solid #fff;
-    border-radius: 12px;
-    outline: none;
-}
-
-.back-img {
-    background-image: url(../../imgs/header.png);
-    background-size: cover;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    color: #fff;
-}
-
-.btn{
+.btn {
     color: #000 !important;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-.txt {
-    font-size: 80px;
-    line-height: 160px;
-    margin-left: -10px;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    // background-image: url(back.png);
-    background-clip: text;
-    background-position: 0 0;
-    animation: back 20s linear infinite;
-    font-family: serif;
-}
-
-@keyframes back-img {
-    100% {
-        background-position: 2000px 0;
-    }
-}
-
-
-
-.tech-icon{
+.tech-icon {
     width: 120px;
     height: 120px;
 }
@@ -175,7 +120,7 @@ html {
     transition: all 0.5s ease-in-out;
     display: flex;
     align-items: center;
-    margin-top: 140px;   
+    margin-top: 140px;
 }
 
 
@@ -203,23 +148,26 @@ html {
 
 
 .gal-wrapper {
-	width: 1000px;
-	margin: 5% auto 0;
+    width: 1000px;
+    margin: 5% auto 0;
 }
+
 .gallery {
-	column-count: 3;
-	column-gap: 10px;
+    column-count: 3;
+    column-gap: 10px;
 }
+
 .gallery-item {
-	display: inline-block;
-	margin-bottom: 10px;
-	width: 100%;
-	overflow: hidden;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+    overflow: hidden;
 }
+
 .gallery-item img {
-	width: 100%;
-	height: auto;
-	display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 
@@ -263,94 +211,119 @@ html {
 /* /////////////// paralex//////gallery */
 
 
-.counter-Txt{text-align:center; font-size:20px; font-weight:bold; text-transform:uppercase; margin-top:20px;}
-.counter-Txt span{display:block; font-size:36px}
-@media(min-width:320px) and (max-width:767px){ 
-.c-no{height:100%;}
-.counter-Txt{margin-top:15px;}
-.margin-bot-35{margin-bottom:35px;}
+.counter-Txt {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.counter-Txt span {
+    display: block;
+    font-size: 36px
+}
+
+@media(min-width:320px) and (max-width:767px) {
+    .c-no {
+        height: 100%;
+    }
+
+    .counter-Txt {
+        margin-top: 15px;
+    }
+
+    .margin-bot-35 {
+        margin-bottom: 35px;
+    }
 }
 
 .wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 20px;
-	padding: 5% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 5% 0;
 }
 
 .review-card {
-	background-color: #f5f5f5;
-	border-radius: 10px;
-	padding: 20px;
-	width: 300px;
-	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .img-area {
-	width: 80px;
-	height: 80px;
-	overflow: hidden;
-	border-radius: 50%;
-	margin-right: 25px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 25px;
 }
 
 .img-area img {
-	width: 100%;
+    width: 100%;
 }
 
 .header-content {
-	display: flex;
-	align-items: center;
-	margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .info h4 {
-	margin: 0;
-	font-size: 22px;
-	font-weight: 600;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .info p {
-	margin: 5px 0 0;
-	font-size: 14px;
-	font-weight: 400;
-	color: #666;
+    margin: 5px 0 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
 }
 
 .single-review p {
-	margin: 0;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.7;
-	color: #333;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #333;
 }
+
 .review-footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 10px;
-	font-size: 14px;
-	color: #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
 }
+
 .rating {
-	display: flex;
+    display: flex;
 }
+
 .rating span {
-	color: #000;
-	font-size: 18px;
+    color: #000;
+    font-size: 18px;
 }
+
 .rating span.active {
-	color: #fbc02d;
+    color: #fbc02d;
 }
+
 @media screen and (max-width: 767px) {
-	.wrapper {
-		flex-direction: column;
-		align-items: center;
-	}
-	.review-card {
-		width: 85%;
-	}
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 85%;
+    }
 }
 
 button {
@@ -360,16 +333,16 @@ button {
     cursor: pointer;
 }
 
-.pointer{
+.pointer {
     cursor: pointer !important;
 }
 
 .hidden-text {
-  display: none;
+    display: none;
 }
 
 .show-text {
-  display: block;
+    display: block;
 }
 
 footer {
@@ -444,12 +417,45 @@ footer .copyright {
     overflow: hidden;
 }
 
-.flex-dir-col{
+.flex-dir-col {
     display: flex !important;
     flex-direction: column !important;
     text-align: start !important;
 }
 
-.pr-5{
+.pr-5 {
     padding-right: 5px !important;
 }
+
+// ------------ animate styles ----------------
+
+.header-text {
+    font-size: 2rem;
+    display: inline-block;
+    animation: air-text 1.5s ease-in-out infinite;
+}
+
+@keyframes air-text {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slide-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1.5s ease-out;
+  }
+  
+  .slide-item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }

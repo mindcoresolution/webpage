@@ -1,49 +1,21 @@
-<div class="container-fluid" id="main">
-  <div class="container">
-    <nav class="navbar navbar-expand-sm navbar-light">
-      <a href="#" class="navbar-brand">
-        <h1 class="ml-lg-2 heading">Core Mind Solution</h1>
-      </a>
-      <button class="navbar-toggler d-lg-none bg-white" type="button" data-toggle="collapse" data-target="#collapse_nav"
-        aria-controls="collapse_nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse d-md-flex justify-content-end" id="collapse_nav">
-        <ul class="navbar-nav">
-          <li class="nav-item pointer">
-            <a href="#home" class="nav-link ml-lg-4" id="link_one">Home</a>
-          </li>
-          <li class="nav-item pointer">
-            <a href="#about" class="nav-link ml-lg-4" id="link_one">About</a>
-          </li>
-          <li class="nav-item pointer">
-            <a href="#services" class="nav-link ml-lg-4" id="link_one">Services</a>
-          </li>
-          <li class="nav-item pointer">
-            <a href="#technologies" class="nav-link ml-lg-4" id="link_one">Technologies</a>
-          </li>
-          <li class="nav-item pointer">
-            <a href="#portfolio" class="nav-link ml-lg-4" id="link_one">Portfolio</a>
-          </li>
-          <li class="nav-item pointer" (click)="openContact()">
-            <a class="nav-link ml-lg-4" id="link_one">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<cms-navbar></cms-navbar>
+
+<div class="container" [ngClass]="isMobile ? 'mt-5' : 'mt-3'">
+  <div class="row d-flex align-items-center">
+    <div class="col-md-6"> 
+      <span class="heading-black header-text"> 
+        <h1 class="mt-5">Innovative <span class="text-primary"> Digital Solutions,
+        </span> Built for Your Success.
+      </h1></span>
+    </div>
+    <div class="col-md-6"> 
+      <img class="w-100" src="../../imgs/headerimg.jpg" alt="header">
+    </div>
   </div>
 </div>
 
-<div class="back-img">
-  <div class="container text-center mt-5 pt-5">
-    <h1 class="mt-5 pt-5 txt">CORE MIND SOLUTIONS</h1>
-    <h2 class="heading2">Transforming Ideas Into Digital Reality</h2>
-    <button mat-raised-button class="mt-2 btn">Get Started</button>
-  </div>
-</div>
-
-<div id="about" class="container mt-5">
-  <div class="row mt-5">
+<div id="aboutUs" class="container mt-4 slide-item">
+  <div class="row">
     <div class="col-md-6">
       <img class="w-100" src="../../imgs/pic1.png" alt="About Core Mind Solutions">
     </div>
@@ -220,17 +192,6 @@
   </div>
 </div>
 
-<!-- <div class="gal-wrapper">
-  <div class="gallery">
-      <div class="gallery-item"><img src="../../imgs/work-1.jpg" alt="Image 1"></div>
-      <div class="gallery-item"><img src="../../imgs/work-1.jpg" alt="Image 2"></div>
-      <div class="gallery-item"><img src="../../imgs/work-1.jpg" alt="Image 3"></div>
-      <div class="gallery-item"><img src="../../imgs/work-1.jpg" alt="Image 4"></div>
-      <div class="gallery-item"><img src="../../imgs/work-1.jpg" alt="Image 5"></div>
-      <div class="gallery-item"><img src="../../imgs/work-1.jpg" alt="Image 6"></div>
-  </div>
-</div> -->
-
 <div class="container pt-5 mt-5">
   <div class="row">
     <div class="col-md-6">
@@ -319,7 +280,6 @@
     </div>
   </div>
 </div>
-
 
 <footer class="bg-dark text-white pt-5 pb-4">
 
