@@ -1,1 +1,27 @@
-<p>Hum Kon? Tum Kon?</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-7">
+            <img src="../../imgs/aboutUs.png" class="img" [ngClass]="isMobile ? 'h-275' : 'h-400'">
+        </div>
+        <div class="col-md-5 d-flex align-items-center">
+            <div class="text-center p-3" [class.content]="!isMobile" [class.content-mobile]="isMobile" 
+                [class.mt-4]="isMobile">
+                <h3 class="img-txt">About Us</h3>
+                <p>Core Mind Solutions is a leading software development company dedicated to delivering innovative and scalable solutions. With a team of expert developers and cutting-edge technologies, we transform complex business challenges into elegant digital solutions.
+                    Our mission is to provide exceptional software solutions that drive business growth and enhance operational efficiency. We believe in building long-term partnerships with our clients, understanding their unique needs, and delivering solutions that exceed expectations.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div id="aboutUs" class="container mt-4 slide-item">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="w-100" src="../../imgs/pic1.png" alt="About Core Mind Solutions">
+    </div>
+    <div class="col-md-6 mt-5 text-center p-5">
+      <h1><span class="heading-black p-2">About Us</span> </h1>
+    </div>
+  </div>
+</div> -->

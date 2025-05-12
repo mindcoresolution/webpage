@@ -1,0 +1,26 @@
+.card{
+    background: rgb(250, 245, 245);
+    border: none ;
+    height: 175px !important;
+}
+
+.card-title{
+    margin: 0px;
+    padding-left: 13px;
+    font-size: 20px;
+}
+
+.card-para{
+    margin: 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.card:hover{
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+    // border: 2px solid rgb(181, 170, 230);
+    box-shadow: 2px 2px 19px 4px rgba(0, 0, 0, 0.1);
+
+}

@@ -1,14 +1,14 @@
 import { MatModules } from '../mat-modules';
 import { Component, OnInit, HostListener } from '@angular/core';
 import $ from 'jquery';
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { ContactComponent } from '../contact/contact.component';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { NavbarComponent } from "../navbar/navbar.component";
+import { ServicesComponent } from "../services/services.component";
+import { AboutComponent } from "../about/about.component";
 
 @Component({
   selector: 'app-home',
-  imports: [MatModules, NavbarComponent],
+  imports: [MatModules, NavbarComponent, ServicesComponent, AboutComponent],
   standalone: true,
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   isMobile: boolean = false;
   isSlideAbout: boolean = false;
 
-  constructor(private _myDialog: MatDialog, private _breakPoint: BreakpointObserver) {}
+  constructor(private _breakPoint: BreakpointObserver) {}
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -36,18 +36,6 @@ export class HomeComponent implements OnInit {
         this.isMobile = false;
       }
     });
-    window.addEventListener('scroll', this.checkScroll);
-  }
-
-  checkScroll = () => {
-    const element = document.getElementById('aboutUs');
-    const rect = element?.getBoundingClientRect();
-    
-    if (rect && rect.top < window.innerHeight && rect.bottom >= 0) {
-      element?.classList.add('show');
-    } else {
-      element?.classList.remove('show');
-    }
   }
 
   toggleText(){

@@ -14,53 +14,9 @@
   </div>
 </div>
 
-<div id="aboutUs" class="container mt-4 slide-item">
-  <div class="row">
-    <div class="col-md-6">
-      <img class="w-100" src="../../imgs/pic1.png" alt="About Core Mind Solutions">
-    </div>
-    <div class="col-md-6 mt-5 text-center p-5">
-      <h1><span class="heading-black p-2">About Us</span> </h1>
-      <p class="mt-5">Core Mind Solutions is a leading software development company dedicated to delivering innovative and scalable solutions. With a team of expert developers and cutting-edge technologies, we transform complex business challenges into elegant digital solutions.</p>
-      <p>Our mission is to provide exceptional software solutions that drive business growth and enhance operational efficiency. We believe in building long-term partnerships with our clients, understanding their unique needs, and delivering solutions that exceed expectations.</p>
-    </div>
-  </div>
-</div>
+<cms-services></cms-services>
 
-<div id="services" class="container mt-5">
-  <div class="row">
-    <div class="col-md-4 text-center">
-      <img src="../../imgs/development.png" class="w-25" alt="Web Development">
-      <h3 class="heading2">Web Development</h3>
-      <p>Custom web applications and responsive websites built with modern frameworks and best practices.</p>
-    </div>
-    <div class="col-md-4 text-center">
-      <img src="../../imgs/mobile-development.png" class="w-25" alt="Mobile Development">
-      <h3 class="heading2">Mobile Development</h3>
-      <p>Native and cross-platform mobile applications for iOS and Android platforms.</p>
-    </div>
-    <div class="col-md-4 text-center">
-      <img src="../../imgs/microchip.png" class="w-25" alt="AI Solutions">
-      <h3 class="heading2">AI Solutions</h3>
-      <p>Intelligent systems and machine learning solutions to automate and optimize business processes.</p>
-    </div>
-    <div class="col-md-4 mt-3 text-center">
-      <img src="../../imgs/migrating.png" class="w-25" alt="Cloud Services">
-      <h3 class="heading2">Cloud Services</h3>
-      <p>Cloud infrastructure setup, migration, and management for scalable and secure operations.</p>
-    </div>
-    <div class="col-md-4 mt-3 text-center">
-      <img src="../../imgs/customer-support.png" class="w-25" alt="IT Consulting">
-      <h3 class="heading2">IT Consulting</h3>
-      <p>Strategic technology consulting to help businesses make informed digital decisions.</p>
-    </div>
-    <div class="col-md-4 mt-3 text-center">
-      <img src="../../imgs/24-hours-support.png" class="w-25" alt="Support & Maintenance">
-      <h3 class="heading2">Support & Maintenance</h3>
-      <p>Comprehensive support services to ensure your systems run smoothly and efficiently.</p>
-    </div>
-  </div>
-</div>
+<cms-about></cms-about>
 
 <div class="tech-section" id="technologies">
   <div class="container-fluid tech-img mt-5">
@@ -87,7 +43,7 @@
       <div [ngClass]="isTextVisible ? 'show-text' : 'hidden-text'">
       <p class="mt-2 heading2"> we craft experiences that connect with users and leave a lasting impact. By focusing on collaboration, continuous learning, and forward-thinking strategies, we ensure that our clients are always one step ahead in an ever-evolving digital world. Whether it's designing intuitive user experiences, developing scalable applications, or creating next-generation platforms, we are committed to delivering excellence at every stage. At Core Mind Solutions, your vision becomes our mission, and we work passionately to transform ambitious ideas into groundbreaking realities."</p>
     </div>
-      <button mat-raised-button (click)="toggleText()" class="mt-1 btn">Learn More</button>
+      <button mat-raised-button (click)="toggleText()" class="mt-1 btn">{{isTextVisible ? 'Hide' : 'Read More'}}</button>
     </div>
     <div class="col-md-6">
       <img src="imgs/4380747.jpg" class="w-100" alt="Innovation">
@@ -115,7 +71,7 @@
   </div>
 </div>
 
-<div class="container text-center align-item-center mt-5 pt-5">
+<!-- <div class="container text-center align-item-center mt-5 pt-5">
   <div class="row">
     <div class="col-md-4">
       <div class="card">
@@ -156,9 +112,9 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-<div id="banner">
+<!-- <div id="banner">
   <div id="content">
     <div class="container-fluid">
       <div id="portfolio" class="container mt-5 pt-5">
@@ -190,7 +146,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="container pt-5 mt-5">
   <div class="row">
@@ -205,7 +161,7 @@
   </div>
 </div>
 
-<h1 class="heading-black text-center mt-5 pt-5">Client Testimonials</h1>
+<!-- <h1 class="heading-black text-center mt-5 pt-5">Client Testimonials</h1>
 <div class="wrapper">
   <div class="review-card">
     <div class="header-content">
@@ -279,7 +235,7 @@
       <p>Reviewed on 01/03/2023</p>
     </div>
   </div>
-</div>
+</div> -->
 
 <footer class="bg-dark text-white pt-5 pb-4">
 
