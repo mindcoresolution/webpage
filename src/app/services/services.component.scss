@@ -1,7 +1,9 @@
 .card{
-    background: rgb(250, 245, 245);
+    background: rgb(255, 255, 255);
     border: none ;
     height: 175px !important;
+    box-shadow: 2px 2px 19px 4px rgba(39, 39, 39, 0.1);
+
 }
 
 .card-title{
@@ -21,6 +23,6 @@
     cursor: pointer;
     transition: 0.4s all ease-in-out;
     // border: 2px solid rgb(181, 170, 230);
-    box-shadow: 2px 2px 19px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 19px 4px rgba(0, 0, 0, 0.384);
 
 }
