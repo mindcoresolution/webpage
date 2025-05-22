@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatModules } from '../mat-modules';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'cms-services',
@@ -33,6 +34,12 @@ export class ServicesComponent {
         this.isMobile = false;
       }
     });
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+    });
+
   }
 
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MatModules } from '../mat-modules';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'cms-about',
@@ -24,6 +25,11 @@ export class AboutComponent {
         this.isMobile = false;
       }
     });
+     AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          once: false,
+        });
   }
 
   // checkScroll = () => {
