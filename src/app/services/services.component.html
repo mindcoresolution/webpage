@@ -1,14 +1,24 @@
 <div data-aos="fade-up">
-<div class="container mt-5">
+  <div class="container mt-5">
     <div class="row">
       <div class="col-md-4" *ngFor="let card of cardsData" [ngClass]="isMobile ? 'mt-3' : 'mt-1'">
         <div class="card px-4" [ngClass]="!isMobile ? 'mt-2' : ''">
-            <div class="d-flex align-items-center">
-                <img [src]="'../../imgs/' + card.img" class="w-25 p-2" [alt]="card.title">
-                <h4 class="card-title">{{card.title}}</h4>
-            </div>
-            <p class="card-para">{{card.desc}}</p>
+          <div class="d-flex align-items-center">
+            <img [src]="'../../imgs/' + card.img" class="w-25 p-2" [alt]="card.title">
+            <h4 class="card-title">{{card.title}}</h4>
+          </div>
+          <p class="card-para">{{card.desc}}</p>
         </div>
       </div>
+    </div>
   </div>
-  </div>
+ </div>
+
+ <!-- <div class="container-fluid">
+  <mat-grid-list cols="4" rowHeight="80px">
+    @for (tile of tiles; track tile) {
+      <mat-grid-tile [colspan]="tile.cols" [rowspan]="tile.rows"
+        [style.background]="tile.color">{{tile.text}}</mat-grid-tile>
+    }
+  </mat-grid-list>
+</div> -->

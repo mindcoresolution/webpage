@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit {
   private isScroll = 0;
   isTextVisible: boolean = false;
   isMobile: boolean = false;
-  isSlideAbout: boolean = false;
 
   constructor(private _breakPoint: BreakpointObserver) {}
 
