@@ -9,6 +9,73 @@ html {
     font-style: normal;
 }
 
+.f-s-34{
+    font-size: 34px !important;
+}
+
+.f-s-17{
+    font-size: 17px !important;
+}
+
+.blink-slide {
+  animation: slide-in 1s ease-out forwards, blink 1.5s 1.5s infinite;
+}
+
+// .sliding-text {
+//   @include slideIn(1s, 0.3s);
+// }
+
+// @mixin slideIn($duration: 1s, $delay: 0s) {
+//   animation: slide-in $duration ease-out $delay forwards;
+// }
+
+// @keyframes slide-in {
+//   0% {
+//     transform: translateX(-100%);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+// }
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@mixin blink($duration: 1s) {
+  animation: blink $duration infinite;
+}
+
+.cms-banner{
+    width: 100% !important;
+    height: 100vh !important;
+    background-image: url(../../../../cmp_pro/src/imgs/cms-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
 .heading2 {
     font-family: "Saira", sans-serif;
 }
@@ -122,9 +189,6 @@ html {
     display: block;
 }
 
-
-
-
 .tech-section {
     background: url(../../imgs/technogies.jpg) no-repeat;
     min-height: 100vh;
@@ -159,9 +223,6 @@ html {
     align-items: center;
     justify-content: space-between;
 }
-
-/* /////////////// paralex//////gallery */
-
 
 .counter-Txt {
     text-align: center;
@@ -344,8 +405,6 @@ footer .copyright {
 .pr-5 {
     padding-right: 5px !important;
 }
-
-// ------------ animate styles ----------------
 
 .header-text {
     font-size: 2rem;

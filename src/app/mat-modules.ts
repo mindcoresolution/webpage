@@ -16,6 +16,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper'; 
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [],
@@ -36,6 +37,7 @@ import { CommonModule } from '@angular/common';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     CommonModule,
+    MatGridListModule
   ],
   exports: [
     MatButtonModule,
@@ -54,6 +56,7 @@ import { CommonModule } from '@angular/common';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     CommonModule,
+    MatGridListModule
   ],
   providers: [
     {

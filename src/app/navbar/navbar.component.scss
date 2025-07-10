@@ -2,7 +2,9 @@
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
-    background: linear-gradient(90deg, #6ba2da, #57488d);
+    // background: linear-gradient(90deg, #6ba2da, #57488d);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px) !important;
     color: #fff;
     padding: 16px 30px;
     position: fixed;
@@ -87,5 +89,9 @@
         }
       }
     }
-  }
+}
+
+.txt-clr-black{
+  color: #000 !important;
+}
   

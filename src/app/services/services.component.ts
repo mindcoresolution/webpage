@@ -20,6 +20,12 @@ export class ServicesComponent {
     { img: 'customer-support.png', title: 'IT Consulting', desc: 'Strategic technology consulting to help businesses make informed digital decisions.' },
     { img: '24-hours-support.png', title: 'Support & Maintenance', desc: 'Comprehensive support services to ensure your systems run smoothly and efficiently.' },
   ];
+  tiles: any[] = [
+    {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
+    {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
+  ];
 
   constructor(private _breakPoint: BreakpointObserver){
 

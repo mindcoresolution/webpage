@@ -1,16 +1,11 @@
 <cms-navbar></cms-navbar>
 
-<div class="container" [ngClass]="isMobile ? 'mt-5' : 'mt-3'">
-  <div class="row d-flex align-items-center">
-    <div class="col-md-6"> 
-      <span class="heading-black header-text"> 
-        <h1 class="mt-5">Innovative <span class="text-primary"> Digital Solutions,
-        </span> Built for Your Success.
-      </h1></span>
-    </div>
-    <div class="col-md-6"> 
-      <img class="w-100" src="../../imgs/headerimg.jpg" alt="header">
-    </div>
+<div class="cms-banner">
+  <div class="backdrop"></div>
+  <div class="content" [ngClass]="isMobile ? 'text-center' : 'text-start'">
+    <p class="heading f-s-34">Welcome To Core Mind Solution</p>
+    <p class="heading f-s-17 blink-slide">Empowering Your Business with Next-Gen Technology.</p>
+    <p class="heading f-s-17 blink-slide">Built with Passion. Delivered with Precision.</p>
   </div>
 </div>
 
@@ -71,83 +66,6 @@
   </div>
 </div>
 
-<!-- <div class="container text-center align-item-center mt-5 pt-5">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card">
-        <div class="box">
-          <div class="content">
-            <img src="../../imgs/custom solution.png" class="w-75">
-            <h3 class="text-light">Custom Solutions</h3>
-            <p class="text-secondary">Tailored software solutions designed to meet your specific business requirements and challenges.</p>
-            <button mat-raised-button class="mt-1 btn">Read More</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card">
-        <div class="box">
-          <div class="content">
-            <img src="../../imgs/quality assurance.png" class="w-75">
-            <h3 class="text-light">Quality Assurance</h3>
-            <p class="text-secondary">Rigorous testing and quality control processes to ensure reliable and bug-free software.</p>
-            <button mat-raised-button class="mt-1 btn">Read More</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card">
-        <div class="box">
-          <div class="content">
-            <img src="../../imgs/support.png" class="w-75">
-            <h3 class="text-light ">24/7 Support</h3>
-            <p class="text-secondary">Round-the-clock technical support to ensure your systems run smoothly at all times.</p>
-            <button mat-raised-button class="mt-1 btn">Read More</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-<!-- <div id="banner">
-  <div id="content">
-    <div class="container-fluid">
-      <div id="portfolio" class="container mt-5 pt-5">
-        <h2 class="text-center"><span class="p-2 heading">Our Portfolio</span></h2>
-        <div class="row mt-5">
-          <div class="col-md-4 p-5">
-            <img class="gal-img" width="100%" src="imgs/work-1.jpg" alt="E-commerce Platform">
-          </div>
-          <div class="col-md-4 p-5">
-            <img class="gal-img" width="100%" src="imgs/work-2.jpg" alt="Healthcare Management System">
-          </div>
-          <div class="col-md-4 p-5">
-            <img class="gal-img" width="100%" src="imgs/work-3.jpg" alt="Financial Analytics Dashboard">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 p-5">
-            <img class="gal-img" width="100%" src="imgs/work-4.jpg" alt="Mobile Banking App">
-          </div>
-          <div class="col-md-4 p-5">
-            <img class="gal-img" width="100%" src="imgs/work-5.jpg" alt="AI-Powered Chatbot">
-          </div>
-          <div class="col-md-4 p-5">
-            <img class="gal-img" width="100%" src="imgs/work-6.jpg" alt="Cloud Migration Project">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-
 <div class="container pt-5 mt-5">
   <div class="row">
     <div class="col-md-6">
@@ -160,82 +78,6 @@
     </div>
   </div>
 </div>
-
-<!-- <h1 class="heading-black text-center mt-5 pt-5">Client Testimonials</h1>
-<div class="wrapper">
-  <div class="review-card">
-    <div class="header-content">
-      <div class="img-area">
-        <img alt="Sarah Johnson" src="../../imgs/gitl-removebg-preview.png">
-      </div>
-      <div class="info">
-        <h4>Sarah Johnson</h4>
-        <p>CTO, TechStart Inc.</p>
-      </div>
-    </div>
-    <div class="single-review">
-      <p>"Core Mind Solutions transformed our outdated systems into a modern, efficient platform. Their team's expertise and dedication were instrumental in our digital transformation journey."</p>
-    </div>
-    <div class="review-footer">
-      <div class="rating">
-        <span class="active">★</span> 
-        <span class="active">★</span> 
-        <span class="active">★</span> 
-        <span class="active">★</span> 
-        <span class="active">★</span>
-      </div>
-      <p>Reviewed on 01/01/2023</p>
-    </div>
-  </div>
-  <div class="review-card mx-5">
-    <div class="header-content">
-      <div class="img-area">
-        <img alt="customer1" src="../../imgs/gitl-removebg-preview.png">
-      </div>
-      <div class="info">
-        <h4>Mark Wood</h4>
-        <p>Graphics Expert</p>
-      </div>
-    </div>
-    <div class="single-review">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor eveniet deleniti repellendus! Minima, dolorum.</p>
-    </div>
-    <div class="review-footer">
-      <div class="rating">
-        <span class="active">★</span> 
-        <span class="active">★</span> 
-        <span class="">★</span> 
-        <span class="">★</span> 
-        <span class="">★</span>
-      </div>
-      <p>Reviewed on 01/02/2023</p>
-    </div>
-  </div>
-  <div class="review-card">
-    <div class="header-content">
-      <div class="img-area">
-        <img alt="customer1" src="../../imgs/gitl-removebg-preview.png">
-      </div>
-      <div class="info">
-        <h4>Jason Chedd</h4>
-        <p>Web Designer</p>
-      </div>
-    </div>
-    <div class="single-review">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor eveniet deleniti repellendus! Minima, dolorum.</p>
-    </div>
-    <div class="review-footer">
-      <div class="rating">
-        <span class="active">★</span> 
-        <span class="active">★</span> 
-        <span class="active">★</span> 
-        <span class="active">★</span> 
-        <span class="active">★</span>
-      </div>
-      <p>Reviewed on 01/03/2023</p>
-    </div>
-  </div>
-</div> -->
 
 <footer class="bg-dark text-white pt-5 pb-4">
 
